@@ -1,0 +1,16 @@
+void swapp(int *ptra,int *ptrb){
+    int temp = *ptra;
+    *ptra = *ptrb;
+    *ptrb = temp;
+
+}
+
+int main(){
+    int a = 10;
+    int b = 11;
+
+    int *ptra = &a;
+    int *ptrb = &b;
+    swapp(ptra,ptrb);
+    cout<<a<<" "<<b;
+}
